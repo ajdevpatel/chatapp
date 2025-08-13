@@ -41,7 +41,7 @@ io.on("connection", (socket) => {
 
 const PORT = 3001;
 server.listen(PORT, () => {
-    console.log(`✅ Socket.IO Server running on http://localhost:${PORT}`);
+    console.log(`✅ Socket.IO Server running on http://https://chatapp-lilac-eight.vercel.app:${PORT}`);
 });
 
 
