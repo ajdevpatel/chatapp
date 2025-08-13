@@ -19,17 +19,18 @@
     <ul id="chat"></ul>
 
     <script>
-        const socket = io("https://chat-app-jet-five.vercel.app:3001");
+        const socket = io("https://chatapp-lnda.onrender.com:3001");
 
         var deal_id = 0;
         var user_id = 0;
         document.getElementById("join_btn").addEventListener("click", function () {
             deal_id = document.getElementById("deal_id").value;
             user_id = document.getElementById("user_id").value;
-            socket.emit("join_deal", {
+            var x = socket.emit("join_deal", {
                 deal_id,
                 user_id
             });
+            console.log(x);
         });
 
         function sendMessage() {
