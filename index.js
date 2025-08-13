@@ -39,7 +39,7 @@ io.on("connection", (socket) => {
 });
 
 
-const PORT = 3001;
+const PORT = process.env.PORT || 443;
 server.listen(PORT, () => {
-    console.log(`✅ Socket.IO Server running on https://chatapp-lnda.onrender.com:${PORT}`);
+    console.log(`✅ Server running on port ${PORT}`);
 });
